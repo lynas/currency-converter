@@ -19,7 +19,9 @@ API end point
 - Invalid Endpoint
 
 ```
-GET http://localhost:8080/currency/covert/amount/20/from/EUR/to/BDTT
+`GET http://localhost:8080/currency/covert/amount/20/from/EUR/to/BDTT`
+
+- Response
 
 HTTP/1.1 400 Bad Request
 Content-Type: application/json
