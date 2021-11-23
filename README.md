@@ -16,7 +16,7 @@ API end point
 
 ```
 
--Invalid Endpoint
+- Invalid Endpoint
 
 ```
 GET http://localhost:8080/currency/covert/amount/20/from/EUR/to/BDTT
