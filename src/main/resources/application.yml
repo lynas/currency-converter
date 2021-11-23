@@ -1,0 +1,4 @@
+app:
+  api:
+    baseUrl: "http://api.exchangeratesapi.io/v1/"
+    apiKey: "24769b2be50f61a7e5b763500be52811"
