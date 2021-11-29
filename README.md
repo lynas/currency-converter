@@ -36,3 +36,8 @@ Content-Length: 109
 Response code: 400 (Bad Request); Time: 125ms; Content length: 109 bytes
 ```
 
+- Code deployed in `heroku` 
+- Use following curl command to get result from `heroku`
+```
+curl --location --request GET 'http://demo-app-sazzad.herokuapp.com/currency/covert/amount/20/from/EUR/to/BDT'
+```
