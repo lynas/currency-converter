@@ -33,7 +33,8 @@ public class ExternalApiService {
                 .uri(apiBaseUrl+"/convert?access_key="+apiKey+"&from="+fromCurrency+"&to="+toCurrency+"&amount="+amount)
                 .retrieve()
                 .onStatus(status -> status.value() == HttpStatus.FORBIDDEN.value(),
-                        response -> Mono.error(new ApiRequestException("Invalid api key, Make sure api key has permission to call this API")))
+                        response -> Mono.error(new ApiRequestException(
+                            "Invalid api key, Make sure api key has permission to call this API ["+apiBaseUrl+"]")))
                 .bodyToMono(ConversionResponseDTO.class);
     }
 
